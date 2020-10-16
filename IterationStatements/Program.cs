@@ -11,34 +11,51 @@ namespace IterationStatements
 
             //Create a List called "numbers" - DONE
             var numbers = new List<int>();
-            
-            //Create a variable of type int and initialize the variable with a value of 0
 
+            //Create a variable of type int and initialize the variable with a value of 0
+            int randomamount = 0;
 
 
             // Create a do-while loop
             {
-                // Increment your variable by 1
-                // Then add your variable to "numbers"
+                do
+                {
+                    randomamount++;
+                }
+                while (randomamount < 100);
             }
             // While your variable is less than 100
 
-
+            Console.WriteLine("NEXT PROBLEM:");
 
             // Create a while loop
             // While your variable is less than 200
+            while (randomamount < 200)
             {
+                randomamount++;
+                numbers.Add(randomamount);
                 // Increment your variable by 1
                 // Then add your variable to "numbers"
             }
 
-            Console.WriteLine("Increase:");
+          
+            foreach (int increasedamount in numbers)
+            {
+                Console.WriteLine($"Increase: {randomamount++}");
+            }
+
 
             // Create a foreach loop
             // Write your variable to the console
+            foreach (int decreasedamount in numbers)
+            {
+                
+                Console.WriteLine($"Decrease:{randomamount--}");
+                
+            }
 
-            Console.WriteLine("");
-            Console.WriteLine("Decrease:");
+
+            Console.WriteLine("FOR Iteration Statement test:");
 
             // Create a for loop
             // in your initializer set the value of i to 199
@@ -46,6 +63,11 @@ namespace IterationStatements
             // and as long as i is greater than or equal to 0
             // Decrement i by 1
             {
+                for (int i = 199;i <= randomamount && i>= 0; i--)
+                {
+                    Console.WriteLine($"Numbers{i}");
+                }
+
                 // Write to the console "numbers" at index i
             }
         }
